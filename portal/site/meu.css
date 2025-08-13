@@ -1,0 +1,48 @@
+.header {
+    background: linear-gradient(90deg, #4ae54a 0%, #67c9ff 100%);
+    padding: 0;
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px; /* ajuste conforme necessário */
+    height: auto;
+    background: white;
+    border-radius: 50%; /* deixa arredondado igual à sua imagem */
+    padding: 10px;
+    box-shadow: 0 0 20px #0002;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+.logo {
+    width: 120px; /* ou o valor desejado */
+    height: auto;  /* mantém proporção */
+}
