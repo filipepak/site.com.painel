@@ -1,0 +1,70 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    background: #f7f8f9;
+    color: #242424;
+}
+a { text-decoration: none; color: inherit; }
+h2 { color: #872ed6; margin-top: 40px; text-align: left; }
+
+.hero-banner {
+    background: url('img/banner.jpg') no-repeat center/cover, #1ec437;
+    color: #fff;
+    padding: 90px 0 110px 0;
+    text-align: center;
+}
+.hero-content h1 { font-size: 2.5em; margin-bottom: 10px; }
+.hero-content p { font-size: 1.2em; }
+.btn-primary, .btn-secondary {
+    display: inline-block; margin-top: 18px;
+    padding: 10px 22px; border-radius: 5px; font-weight: bold;
+    transition: 0.2s;
+}
+.btn-primary { background: #247df2; color: #fff; }
+.btn-primary:hover { background: #0b4ca0; }
+.btn-secondary { background: #fff; color: #872ed6; border: 1px solid #872ed6; }
+.btn-secondary:hover { background: #872ed6; color: #fff; }
+
+.destaques { max-width: 1150px; margin: 0 auto; padding: 24px 0; }
+.destaques-grid { display: flex; gap: 28px; justify-content: flex-start; flex-wrap: wrap; }
+.destaque-card {
+    background: #fff; border-radius: 10px; box-shadow: 0 2px 16px #0001;
+    padding: 32px 18px; text-align: center; flex: 1 1 220px; max-width: 310px;
+    min-width: 200px;
+}
+.destaque-card img { width: 58px; margin-bottom: 16px; }
+
+.galeria-fotos { max-width: 1200px; margin: 30px auto; }
+.fotos-grid { display: flex; gap: 18px; justify-content: flex-start; flex-wrap: wrap; }
+.fotos-grid img { width: 240px; height: 170px; object-fit: cover; border-radius: 8px; background: #eee; }
+
+.rodape {
+    background: #363c40; color: #fff; padding: 48px 20px 20px 20px;
+    display: flex; gap: 32px; flex-wrap: wrap; justify-content: space-between; margin-top: 40px;
+}
+.rodape-col { flex: 1 1 240px; min-width: 220px; }
+.rodape-col h3 { color: #fff; margin-top: 0; }
+.rodape-col ul { padding-left: 0; list-style: none; }
+.rodape-col ul li { margin-bottom: 6px; }
+.rodape-col ul a { color: #fff; }
+.rodape-col input[type="email"] { width: 80%; padding: 6px; border-radius: 5px; border: none; margin-bottom: 8px; }
+.rodape-col button { padding: 7px 18px; background: #872ed6; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+.social-icons a img { width: 30px; margin-right: 8px; }
+
+/* ==== AJUSTE CARROSSEL ==== */
+.carousel-inner img {
+    width: 100%;
+    max-height: 340px;
+    min-height: 180px;
+    object-fit: contain;   /* ou cover */
+    background: #e0e0e0;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ==== FIM AJUSTE CARROSSEL ==== */
+
+@media (max-width: 900px) {
+    .destaques-grid, .fotos-grid, .rodape { flex-direction: column; align-items: center; }
+    .hero-banner { padding: 54px 0 70px 0; }
+}

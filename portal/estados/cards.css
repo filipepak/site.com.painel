@@ -1,0 +1,134 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 24px;
+}
+.card-mapa {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px 0 rgba(21,194,140,0.10);
+    max-width: 310px;
+    min-width: 250px;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #d8e266;
+    display: flex;
+    flex-direction: column;
+}
+.card-topo {
+    background: #7c4c37;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 2px solid #d8e266;
+}
+.card-topo.artigo     { background: #217a44; }
+.card-topo.mestrado   { background: #7c4c37; }
+.card-topo.doutorado  { background: #323266; }
+
+.card-img {
+    width: 100%;
+    height: 120px; /* Altura máxima ajustada! */
+    background: #e6ebea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img img {
+    width: 100%;
+    height: 120px;      /* Altura máxima para capa */
+    object-fit: cover;  /* Corta e ajusta sem deformar */
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+    max-width: 100%;
+    max-height: 120px;
+}
+.card-img-placeholder {
+    background: #c2d1be url('https://cdn-icons-png.flaticon.com/512/69/69524.png') center center no-repeat;
+    background-size: 60px 60px;
+    width: 100%;
+    height: 120px;
+}
+
+.card-body {
+    padding: 16px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.card-label {
+    font-weight: bold;
+    font-size: 1em;
+    color: #3d3d3d;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+.card-info {
+    background: #f2f2f2;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 0.99em;
+    color: #2b2b2b;
+    margin-bottom: 4px;
+    word-break: break-word;
+    text-align: justify; 
+}
+.card-btn {
+    background: #1495ee;
+    color: #fff !important;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 0;
+    margin-top: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1.08em;
+    transition: background 0.18s;
+    box-shadow: 0 2px 8px 0 rgba(34,87,255,0.08);
+}
+.card-btn:hover {
+    background: #0b76c5;
+    color: #fff !important;
+    text-decoration: underline;
+}
+@media (max-width: 700px) {
+    .grid {
+        gap: 16px;
+    }
+    .card-mapa {
+        max-width: 97vw;
+        font-size: 0.98em;
+    }
+    .card-img, .card-img img, .card-img-placeholder {
+        height: 90px;
+        max-height: 90px;
+    }
+}
+@media (max-width: 440px) {
+    .card-mapa {
+        min-width: 85vw;
+        font-size: 0.95em;
+    }
+}
+.card-img, .card-img img {
+    width: 100% !important;
+    height: 120px !important;
+    max-height: 120px !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-bottom: 1px solid #eee !important;
+}
+@media (max-width: 700px) {
+    .card-img, .card-img img {
+        height: 80px !important;
+        max-height: 80px !important;
+    }
+}
